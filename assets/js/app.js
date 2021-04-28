@@ -1,21 +1,28 @@
-const menuList = document.querySelector('.menu-list');
-const navBar = document.querySelector('.navbar');
-const closeBtn = document.querySelector('.close-toggle');
-const menuBtn = document.querySelector('.menu-toggle');
-const removeLogo = document.querySelector('.logo');
+// define all UI variable
+const navToggler = document.querySelector('.nav-toggler');
+const navMenu = document.querySelector('.site-navbar ul');
+const navLinks = document.querySelectorAll('.site-navbar a');
 
-menuBtn.onclick = () => {
-    menuList.classList.add('active');
-    navBar.classList.add('active');
-    closeBtn.classList.add('active');
-    menuBtn.classList.add('active');
-    removeLogo.classList.add('active');
+// load all event listners
+allEventListners();
+
+// functions of all event listners
+function allEventListners() {
+  // toggler icon click event
+  navToggler.addEventListener('click', togglerClick);
+  // nav links click event
+  navLinks.forEach( elem => elem.addEventListener('click', navLinkClick));
 }
 
-closeBtn.onclick = () => {
-    menuList.classList.remove('active');
-    navBar.classList.remove('active');
-    menuBtn.classList.remove('active');
-    closeBtn.classList.remove('active');
-    removeLogo.classList.remove('active');
+// togglerClick function
+function togglerClick() {
+  navToggler.classList.toggle('toggler-open');
+  navMenu.classList.toggle('open');
+}
+
+// navLinkClick function
+function navLinkClick() {
+  if(navMenu.classList.contains('open')) {
+    navToggler.click();
+  }
 }

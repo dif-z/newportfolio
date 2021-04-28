@@ -22,37 +22,35 @@
 </head>
 <body>
     <!-- /// NAVBAR /// -->
-    <nav class="navbar fixed-top">
-        <div class="logo"><a href="">RadhifAzli</a></div>
-        <div class="content">
-            <ul class="menu-list">
-                <div class="close-toggle">
-                    <i class="fas fa-times"></i>
-                </div>
-                <li class="list-link"><a href="" class="links">Home</a></li>
-                <li class="list-link"><a href="#aboutme" class="links">About</a></li>
-                <li class="list-link"><a href="" class="links">Skill</a></li>
-                <li class="list-link"><a href="" class="links">Contact</a></li>
-                <div class="social-media">
-                    <div class="instagram">
-                        <a href=""><i class="fab fa-instagram"></i>
-                    </div>
-    
-                    <div class="whatsapp">
-                        <a href=""><i class="fab fa-whatsapp"></i></a>
-                    </div>
-                </div>
-                
-            </ul>
-        </div>
-        <div class="menu-toggle">
-            <i class="fas fa-bars"></i>
-        </div>
-    </nav>
+    <header class="header-area">
+        <!-- site-navbar start -->
+        <div class="navbar-area fixed-top">
+          <div class="container">
+            <nav class="site-navbar">
+              <!-- site logo -->
+              <a href="#home" class="site-logo">RadhifAzli</a>
+      
+              <!-- site menu/nav -->
+              <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#aboutme">about</a></li>
+                <li><a href="#">skill</a></li>
+                <li><a href="#">contact</a></li>
+                <li><a href="#" id="instagram-icon"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#" id="whatsapp-icon"><i class="fab fa-whatsapp"></i></a></li>
+              </ul>
+      
+              <!-- nav-toggler for mobile version only -->
+              <button class="nav-toggler">
+                <span></span>
+              </button>
+            </nav>
+          </div>
+        </div><!-- navbar-area end -->
     <!-- /// NAVBAR ENDS /// -->
 
     <!-- /// BANNER/HEADER /// -->
-    <div class="banner container-fluid">
+    <div class="banner container-fluid" id="home">
         <h1>Hi,<br> I'm <span>Radhif</span></h1>
     </div>
     <!-- /// ENDS /// -->

@@ -1,6 +1,11 @@
+body{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
 * {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
     box-sizing: border-box;
 }
 html {
@@ -21,80 +26,169 @@ html {
     --bg-color: #fff;
 }
 
-.content {
-    max-width: 1250px;
-    padding: 0 100px;
-}
 
-.navbar {
-    background: var(--nav-color);
+  .container {
     width: 100%;
-    z-index: 5;
-    padding: 10px 0;
-}
-
-.navbar .content {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  /* default css end */
+  
+  
+  /* navbar regular css start */
+  .navbar-area {
+    background: var(--nav-color);
+  }
+  .site-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  a.site-logo {
+    font-family: var(--first-font);
+    font-size: 26px;
+    font-weight: 800;
+    color: var(--second-color);
+    text-decoration: none;
+  }
+  .site-navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+  }
+  .site-navbar ul li a {
+    color: var(--second-color);
+    font-family: var(--second-font);
+    font-weight: 500;
+    padding: 20px;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .site-navbar ul li a:hover {
+    background: rgba(27, 68, 182, 0.1);
+  }
+  /* navbar regular css end */
+  
+  
+  /* nav-toggler css start */
+  .nav-toggler {
+    padding: 5px;
+    background-color: transparent;
+    cursor: pointer;
+    height: 39px;
+    display: none;
+  }
+  .nav-toggler span, 
+  .nav-toggler span:before, 
+  .nav-toggler span:after {
+    width: 28px;
+    height: 3px;
+    background-color: var(--font-color);
+    display: block;
+    transition: .3s;
+  }
+  .nav-toggler span:before {
+    content: '';
+    transform: translateY(-9px);
+  }
+  .nav-toggler span:after {
+    content: '';
+    transform: translateY(6px);
+  }
+  .nav-toggler.toggler-open span {
+    background-color: transparent;
+  }
+  .nav-toggler.toggler-open span:before {
+    transform: translateY(0px) rotate(45deg);
+  }
+  .nav-toggler.toggler-open span:after {
+    transform: translateY(-3px) rotate(-45deg);
+  }
+  /* nav-toggler css start */
+  
+  
+  /* intro-area css start */
+  .intro-area {
+    height: calc(100vh - 61px);
     display: flex;
     align-items: center;
-    justify-content: space-between;
-}
-
-.menu-list {
-    margin-top: 30px;
-}
-
-:is(.menu-toggle, .close-toggle) {
-    visibility: hidden;
-}
-
-.navbar .menu-list {
-    display: inline-flex;
-}
-
-.logo {
-    padding: 12px 0 10px 50px;
-}
-
-.close-toggle i:hover {
-    color: #ff0000;
-    transition: 0.3s;
-}
-
-
-:is(.logo a, .menu-list li a) {
-    text-decoration: none;
-}
-
-.logo a {
-    color: var(--first-color);
-    font-family: var(--first-font);
-    font-size: 2rem;
-}
-
-
-.list-link {
-    font-family: var(--second-font);
-    list-style: none;
-}
-
-.links {
-    color: var(--font-color);
+    text-align: center;
+    color: #fff;
+  }
+  .intro-area h2 {
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 50px;
+    margin-bottom: 25px;
+  }
+  .intro-area p {
     font-size: 18px;
-    font-weight: 500;
-    margin-left: 70px;
-    transition: 0.3s;
-    text-transform: uppercase;
-}
+  }
+  /* intro-area css end */
 
-.links:hover {
-    color: var(--first-color);
-    transition: 0.2s;
-}
-
-
-.social-media {
-    visibility: hidden;
-}
+  .site-navbar ul li a i {
+      font-size: 20px;
+  }
+  #instagram-icon:hover {
+      background: rgba(182, 27, 92, 0.1);
+  }
+  #whatsapp-icon:hover {
+      background: rgba(17, 204, 42, 0.1);
+  }
+  
+  
+  /* mobile breakpoint start */
+  @media screen and (max-width: 767px) {
+    .container {
+      max-width: 720px;
+    }
+    /* navbar css for mobile start */
+    .nav-toggler{
+      display: block;
+      border: none;
+    }
+    .site-navbar {
+      min-height: 60px;
+    }
+    .site-navbar ul {
+      position: absolute;
+      width: 100%;
+      height: calc(100vh - 60px);
+      left: 0;
+      top: 60px;
+      flex-direction: column;
+      align-items: center;
+      
+      background-color:var(--second-color);
+      max-height: 0;
+      overflow: hidden;
+      transition: .3s;
+    }
+    .site-navbar ul li {
+      width: 100%;
+      text-align: center;
+    }
+    .site-navbar ul li a {
+      padding: 25px;
+      color: var(--bg-color);
+    }
+    .site-navbar ul li a:hover {
+      background-color: rgba(255,255,255,.1);
+    }
+    .site-navbar ul.open {
+      max-height: 100vh;
+      overflow: visible;
+    }
+    .intro-area h2 {
+      font-size: 36px;
+      margin-bottom: 15px;
+    }  
+    /* navbar css for mobile end */
+  }
+  /* mobile breakpoint end */
 /* ===== NAVBAR ENDS ===== */
 
 
@@ -287,98 +381,8 @@ html {
 }
 
 
-@media screen and (min-width: 992px) {
-    .navbar .menu-list {
-        margin-left: 20rem;
-    }
-}
-@media screen and (max-width: 768px) {
-    /* ===== NAVBAR MOBILE VER ===== */
-    .navbar .menu-list {
-        position: fixed;
-        left: -300%;
-    }
 
-    .navbar .menu-list.active {
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 100vh;
-        width: 100%;
-        max-width: 400px;
-        background: var(--second-color);
-        display: block;
-        padding: 20px 0;
-        text-align: center;
-        transition: 0.2s;
-    }
-
-    .logo.active {
-        display: none;
-    }
-    
-    .menu-toggle {
-        visibility: visible;
-        cursor: pointer;
-        font-size: 2rem;
-        padding-right: 10px;
-    }
-
-    .menu-toggle.active {
-        visibility: hidden;
-    }
-    
-
-    .close-toggle.active {
-        cursor: pointer;
-        visibility: visible;
-        font-size: 2rem;
-        color: var(--nav-color);
-    }
-
-
-    .navbar.active {
-        background: var(--second-color);
-        max-width: 400px;
-        left: 0;
-        transition: 0.3s;
-    }
-
-    .navbar {
-        position: fixed;
-        left: -100%;
-    }
-
-    .list-link {
-        margin-top: 45px;
-        margin-right: 70px;
-    }
-
-    .links {
-        color: var(--nav-color);
-        font-size: 20px;
-        text-transform: none;
-        font-family: var(--first-font);
-    }
-
-    .social-media {
-        visibility: visible;
-        display: inline-flex;
-        padding-top: 5rem;
-        font-size: 2rem;
-    }
-
-    :is(.social-media .instagram a, .whatsapp a) {
-        color: var(--nav-color);
-    }
-
-    :is(.social-media .instagram a, .whatsapp a):hover {
-        color: #c9c6c6;
-    }
-
-    .social-media .whatsapp {
-        padding-left: 4rem;
-    }
+@media (max-width: 868px) {
 
     /* ===== ABOUT ME SECTION ===== */
     .about p {

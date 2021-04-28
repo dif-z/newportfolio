@@ -44,7 +44,7 @@ sr.reveal('.section-header',{});
 sr.reveal('.name',{ delay: 300 });
 sr.reveal('.mail',{ delay: 500 });
 sr.reveal('.msg',{ delay: 700 });
-sr.reveal('.send-button',{ delay: 800 });
+sr.reveal('.send-button',{ delay: 700 });
 
 //reveal about section
 sr.reveal('.about',{ delay: 100 });

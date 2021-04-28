@@ -1,9 +1,10 @@
 body{
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
+
 * {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 html {
@@ -32,6 +33,7 @@ html {
     padding: 0 15px;
   }
   /* default css end */
+
   
   
   /* navbar regular css start */
@@ -148,7 +150,7 @@ html {
 }
 
 .banner h1 {
-    font-size: 5rem;
+    font-size: 4rem;
     color: var(--font-color);
     font-family: var(--first-font);
     word-spacing: 1rem;
@@ -674,7 +676,7 @@ hr {
 /* mobile breakpoint start */
 @media screen and (max-width: 767px) {
     .container {
-      max-width: 720px;
+      max-width: 620px;
     }
     /* navbar css for mobile start */
     .nav-toggler{
@@ -709,7 +711,6 @@ hr {
       background-color: rgba(255,255,255,.1);
     }
 
-    
     .site-navbar ul.open {
       max-height: 100vh;
       overflow: visible;
@@ -719,6 +720,7 @@ hr {
       margin-bottom: 15px;
     }  
     /* navbar css for mobile end */
+
     /* ===== ABOUT ME SECTION ===== */
     .about p {
         font-size: 1.2rem;

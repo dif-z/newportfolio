@@ -18,6 +18,11 @@
     <!-- /// FONTAWESOME /// -->
     <script src="https://kit.fontawesome.com/621ff7eb18.js" crossorigin="anonymous"></script>
 
+    <!-- /// SCROLLREVEAL.JS /// -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <title>My Portfolio</title>
 </head>
 <body>
@@ -32,12 +37,12 @@
       
               <!-- site menu/nav -->
               <ul>
-                <li><a href="#">home</a></li>
+                <li><a href="#home">home</a></li>
                 <li><a href="#aboutme">about</a></li>
-                <li><a href="#">skill</a></li>
+                <li><a href="#myskills">skill</a></li>
                 <li><a href="#">contact</a></li>
-                <li><a href="#" id="instagram-icon"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="#" id="whatsapp-icon"><i class="fab fa-whatsapp"></i></a></li>
+                <li><a href="https://www.instagram.com/difazl/" id="instagram-icon"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://api.whatsapp.com/send/?phone=6283819801472&text&app_absent=0" id="whatsapp-icon"><i class="fab fa-whatsapp"></i></a></li>
               </ul>
       
               <!-- nav-toggler for mobile version only -->
@@ -51,23 +56,25 @@
 
     <!-- /// BANNER/HEADER /// -->
     <div class="banner container-fluid" id="home">
-        <h1>Hi,<br> I'm <span>Radhif</span></h1>
+        <h1>Hi,<br> I'm <span class="nameline">Radhif</span></h1>
     </div>
     <!-- /// ENDS /// -->
 
     <!-- /// FIRST WAVE /// -->
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="#001aff" 
-        fill-opacity="1" 
-        d="M0,0L26.7,37.3C53.3,75,107,149,160,160C213.3,171,267,117,320,117.3C373.3,117,427,171,480,202.7C533.3,235,587,245,640,250.7C693.3,256,747,256,800,240C853.3,224,907,192,960,176C1013.3,160,1067,160,1120,165.3C1173.3,171,1227,181,1280,154.7C1333.3,128,1387,64,1413,32L1440,0L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z">
-        </path>
-    </svg>
+    <div class="wave__one">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#001aff" 
+            fill-opacity="1" 
+            d="M0,0L26.7,37.3C53.3,75,107,149,160,160C213.3,171,267,117,320,117.3C373.3,117,427,171,480,202.7C533.3,235,587,245,640,250.7C693.3,256,747,256,800,240C853.3,224,907,192,960,176C1013.3,160,1067,160,1120,165.3C1173.3,171,1227,181,1280,154.7C1333.3,128,1387,64,1413,32L1440,0L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z">
+            </path>
+        </svg>
+    </div>
     <!-- /// END /// -->
 
     <!-- /// ABOUT ME SECTION ///-->
     <div class="about-section container-fluid" id="aboutme">
         <div class="row">
-            <div class="col-md-6">
+            <div class="vector col-md-6" data-aos="fade-right" data-aos-duration="1000">
                 <img src="assets/images/6 SCENE.svg">
             </div>
 
@@ -77,25 +84,26 @@
                     I got an Instagram, Twitter, Facebook, and also Twitch. Make sure to follow it!
                 </p>
                 <a href="#knowmore">
-                    <button type="button" class="btn btn-outline-primary">Know More About Me</button>
+                    <button type="button" class="knowmore btn btn-outline-primary">Know More About Me</button>
                 </a>
             </div>
         </div>
     </div>
 
     <!-- /// SECOND WAVE /// -->
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="#001aff" 
-        fill-opacity="1" 
-        d="M0,0L26.7,37.3C53.3,75,107,149,160,160C213.3,171,267,117,320,117.3C373.3,117,427,171,480,202.7C533.3,235,587,245,640,250.7C693.3,256,747,256,800,240C853.3,224,907,192,960,176C1013.3,160,1067,160,1120,165.3C1173.3,171,1227,181,1280,154.7C1333.3,128,1387,64,1413,32L1440,0L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z">
-        </path>
-    </svg>
-
+    <div class="wave__two">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#001aff" 
+            fill-opacity="1" 
+            d="M0,0L26.7,37.3C53.3,75,107,149,160,160C213.3,171,267,117,320,117.3C373.3,117,427,171,480,202.7C533.3,235,587,245,640,250.7C693.3,256,747,256,800,240C853.3,224,907,192,960,176C1013.3,160,1067,160,1120,165.3C1173.3,171,1227,181,1280,154.7C1333.3,128,1387,64,1413,32L1440,0L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z">
+            </path>
+        </svg>
+    </div>
     <!-- /// ABOUT ME SECTION PART 2 /// -->
     <div class="about-section-two container" id="knowmore">
         <div class="row">
             <div class="biodata col-md-6">
-                <p>This is me, a 16 y.o boy. I hope this working out, 
+                <p>This is me, a 16 y.o boy. Hope this one works, 
                     this portfolio website is made using HTML, CSS, and also JavaScript. Follow Me!
                 </p>
                 <!--SOCIAL MEDIA GET IN TOUCH-->
@@ -117,7 +125,7 @@
                   <span></span>
                   <span></span>
                   <span></span>
-                  <span class="fab fa-instagram" aria-hidden="true"></span>
+                  <span class="fab fa-instagram insta" aria-hidden="true"></span>
                 </a>
               </li>
   
@@ -144,16 +152,130 @@
           </div>
             </div>
 
-            <div class="profile col-md-4 text-center">
+            <div class="profile col-md-4 text-center" data-aos="zoom-out" data-aos-duration="1000">
                 <img src="assets/images/logo.jpg" width="250">
             </div>
         </div>
     </div>
 
-    <div class="skill-section-title container text-center">
+
+    <!-- /// SKILL SECTION /// -->
+    <div class="skill-section-title container text-center" id="myskills">
         <h1>My Skills</h1>
     </div>
 
+    <div class="skills-progress container">
+      <div class="bar" data-aos="fade-right" data-aos-duration="500">
+        <div class="info">
+          <span>HTML</span>
+        </div>
+        <div class="progress-line html"><span></span></div>
+      </div>
+
+      <div class="bar" data-aos="fade-right" data-aos-duration="1000">
+        <div class="info"> 
+          <span>JavaScript</span>
+        </div>
+        <div class="progress-line javascript"><span></span></div>
+      </div>
+
+      <div class="bar">
+        <div class="info"> 
+          <span>CSS</span>
+        </div>
+        <div class="progress-line css"><span></span></div>
+      </div>
+    </div>
+
+
+    <!-- /// SECOND WAVE /// -->
+    <div class="wave__two">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#000422" 
+          fill-opacity="1" 
+          d="M0,224L30,229.3C60,235,120,245,180,234.7C240,224,300,192,360,154.7C420,117,480,75,540,90.7C600,107,660,181,720,213.3C780,245,840,235,900,208C960,181,1020,139,1080,149.3C1140,160,1200,224,1260,234.7C1320,245,1380,203,1410,181.3L1440,160L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z">
+        </path>
+      </svg>
+    </div>
+
+    <!-- /// CONTACT FORM AND FOOTER SECTION /// -->
+
+    <section id="contact">
+  
+      <h1 class="section-header">CONTACT ME</h1>
+      
+      <div class="contact-wrapper">
+        
+          <!---------------- 
+    
+          CONTACT PAGE LEFT 
+        
+          -----------------> 
+        
+        <form id="contact-form" class="form-horizontal" role="form">
+           
+          <div class="form-group">
+            <div class="col-sm-12">
+              <input type="text" class="name form-control" id="name" placeholder="What's Your Name?" name="name" value="" required>
+            </div>
+          </div>
+    
+          <div class="form-group">
+            <div class="col-sm-12">
+              <input type="email" class="mail form-control" id="email" placeholder="Put Your Email" name="email" value="" required>
+            </div>
+          </div>
+    
+          <textarea class="msg form-control" rows="10" placeholder="Send Me a Message" name="message" required></textarea>
+          
+          <button class="btn send-button" id="submit" type="submit" value="SEND">
+            <div class="button">
+              <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
+            </div>
+          
+          </button>
+          
+        </form>
+        
+          <!---------------- 
+    
+          CONTACT PAGE RIGHT 
+        
+          -----------------> 
+        
+          <div class="direct-contact-container">
+    
+            <ul class="contact-list">
+              <li class="list-item" data-aos="fade-right" data-aos-duration="300"><i class="fa fa-map-marker fa-2x"></i><span class="contact-text place">Bogor</span></li>
+              
+              <li class="list-item" data-aos="fade-right" data-aos-duration="500"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="#" title="Give me a call">-</a></span></i></li>
+              
+              <li class="list-item" data-aos="fade-right" data-aos-duration="700"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:difazl.18@gmail.com" title="Send me an email">difazl.18@gmail.com</a></span></i></li>
+              
+            </ul>
+    
+            <hr>
+            <ul class="social-media-list" data-aos="zoom-in-down">
+              <li><a href="#" target="_blank" class="contact-icon">
+                <i class="fa fa-github" aria-hidden="true"></i></a>
+              </li>
+              <li><a href="https://twitter.com/RadhifN" target="_blank" class="contact-icon">
+                <i class="fa fa-twitter" aria-hidden="true"></i></a>
+              </li>
+              <li><a href="https://www.instagram.com/difazl/" target="_blank" class="contact-icon">
+                <i class="fa fa-instagram" aria-hidden="true"></i></a>
+              </li>
+              <li><a href="https://twitch.tv/zaynie18" target="_blank" class="contact-icon">
+                <i class="fa fa-twitch" aria-hidden="true"></i></a>
+              </li>
+            </ul>
+            <hr>
+    
+            <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
+    
+          </div>       
+      </div>     
+    </section>  
 <script src="assets/js/app.js"></script>
 </body>
 </html>

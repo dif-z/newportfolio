@@ -150,7 +150,7 @@ html {
 }
 
 .banner h1 {
-    font-size: 4rem;
+    font-size: 5rem;
     color: var(--font-color);
     font-family: var(--first-font);
     word-spacing: 1rem;
@@ -675,6 +675,13 @@ hr {
 
 /* mobile breakpoint start */
 @media screen and (max-width: 767px) {
+    body {
+      overflow-x: hidden;
+    }
+    .banner h1 {
+      font-size: 3rem;
+    }
+  
     .container {
       max-width: 620px;
     }
